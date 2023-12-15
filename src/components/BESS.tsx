@@ -10,8 +10,8 @@ const BESS = (props: SVGProps<SVGSVGElement>) => (
 		<title>{"BESS"}</title>
 		<defs>
 			<linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-				<stop offset="0%" style={{ stopColor: "#ffffff", stopOpacity: 1 }} />
-				<stop offset="100%" style={{ stopColor: "#ffffff", stopOpacity: 1 }} />
+				<stop offset="0%" style={{ stopColor: "#ffffff", stopOpacity: 0.5 }} />
+				<stop offset="100%" style={{ stopColor: "#ffffff", stopOpacity: 0.5 }} />
 			</linearGradient>
 			<path id="a" d="M62.694 98.52h225.774v19.592H62.694z" />
 			<path id="b" d="M62.694 98.52h225.774v19.592H62.694z" />

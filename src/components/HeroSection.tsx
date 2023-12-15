@@ -1,28 +1,36 @@
 import React from "react";
 import BESS from "./BESS";
+import Image from "next/image";
 
 const HeroSection: React.FC = () => {
 	return (
-		<section className="flex flex-col justify-evenly min-h-full shadow-purple-600 shadow"
-			style={{
-				backgroundImage: "url('cover.jpg')",
-				backgroundPosition: 'center',
-				backgroundSize: 'cover',
-				backgroundRepeat: 'no-repeat'
-			}}>
-			<div className="flex gap-6 self-center items-center">
+		<section className="flex flex-col justify-evenly min-h-full border border-yellow-600"
+		// style={{
+		// 	backgroundImage: "url('/geesisila-website/cover.jpg')",
+		// 	backgroundPosition: 'center',
+		// 	backgroundSize: 'cover',
+		// 	backgroundRepeat: 'no-repeat'
+		// }}
+		>
+			<div className="flex flex-col mt-4 lg:mt-0 gap-3 self-center items-center text-violet-200 uppercase font-light text-center text-xs lg:text-xl">
+				<p>The <span className="font-semibold">Department of Building Economics Students' Society &nbsp;</span>of University of Moratuwa</p>
+				<p className="text-violet-300 font-extralight tracking-widest">Proudly presents</p>
+			</div>
+			<div className="flex self-center items-center lg:mt-4">
+				<Image src="/geesisila-website/tagline.png" alt="සප්ත ස්වරයේ සම්භාව්‍ය පුනරාගමනය" width={500} height={500} priority={false} />
+			</div>
+			<div className="grid grid-cols-1 lg:grid-cols-12 lg:mb-8 mt-2 lg:mt-4 bg-black bg-opacity-40">
+				<div className="flex justify-center col-span-7 align-middle mb-8 mt-2 lg:mx-4">
+					<Image src="/geesisila-website/geesisila.png" alt="Sarasavi Gee Sisila" width={500} height={500} />
+				</div>
+				<div className="flex items-center justify-center col-span-5 p-8">
+					<p className="text-lg text-center lg:text-left lg:text-xl lg:mt-4 text-violet-400">Sarasavi Gee Sisila is the premier classical music experience at the University of Moratuwa</p>
+				</div>
+			</div>
+			<div className="flex flex-col self-center m-2 mb-14 lg:mb-8 gap-4">
+				<p className="uppercase font-light text-3xl tracking-widest text-violet-300">Coming Soon</p>
 				<BESS height={40} />
-				<span className="text-3xl uppercase font-extralight text-violet-300">
-					Presents
-				</span>
 			</div>
-			<div className="grid grid-cols-1 lg:grid-cols-12 m-8 lg:mt-14">
-				<p className="text-lg lg:ml-28 lg:text-xl lg:mt-4 col-span-5 text-violet-200 align-middle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores omnis autem sit deleniti quis dolorem libero. Commodi vero enim quia porro quod repudiandae minus beatae ipsum culpa, id, quis aspernatur!</p>
-				{/* <div className="col-span-7 align-middle">
-					<h1 className="text-5xl font-extrabold text-yellow-600 mt-2 mb-8 lg:mx-4">Sarasavi Gee Sisila</h1>
-				</div> */}
-			</div>
-			<div className="flex self-center uppercase font-light text-3xl tracking-widest text-violet-300 m-2 mb-8">Coming Soon</div>
 			{/* <div className="flex justify-evenly">
 				<button
 					className="border py-2 px-4 rounded transition duration-300 ease-in-out border-yellow-500 hover:bg-amber-500 text-yellow-50 hover:text-yellow-950"

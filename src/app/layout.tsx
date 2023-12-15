@@ -20,7 +20,7 @@ export default function RootLayout({
 			<body
 				className={`min-h-screen ${inter.className} bg-img-gradient`}
 				style={{
-					backgroundImage: "url('/bg.jpg')",
+					backgroundImage: "url('/geesisila-website/bg.jpg')",
 					backgroundPosition: 'center',
 					backgroundSize: 'cover',
 					backgroundRepeat: 'no-repeat',
