@@ -1,10 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    output: "export",
-    basePath: "/geesisila-website",
-    images: {
-        unoptimized: true,
-      },
-};
+const nextConfig = {}
 
-module.exports = nextConfig;
+module.exports = nextConfig
+
