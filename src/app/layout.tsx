@@ -18,7 +18,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`min-h-screen ${inter.className} bg-img-gradient`}
+				className={`${inter.className}`}
 				style={{
 					backgroundImage: "url('/bg.jpg')",
 					backgroundPosition: 'center',
